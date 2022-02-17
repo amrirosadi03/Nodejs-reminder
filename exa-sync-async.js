@@ -1,15 +1,15 @@
 // Synchronous
 
-const getUserSync = require("./src/getUserSync");
+// const getUserSync = require("./src/getUserSync");
 
-const firstUser = getUserSync(1);
-console.log(firstUser);
+// const firstUser = getUserSync(1);
+// console.log(firstUser);
 
-const secondUser = getUserSync(2);
-console.log(secondUser);
+// const secondUser = getUserSync(2);
+// console.log(secondUser);
 
-const halo = "Hello World";
-console.log(halo);
+// const halo = "Hello World";
+// console.log(halo);
 
 // Asynchronous
 
