@@ -1,0 +1,37 @@
+NodeJs is a runtime environment for executing JavaScript code
+NodeJs running on V8 enggine google chorm
+JavaScript inside 
+v8 engging is fast and the behavior is as the creator expected
+JavaScript inside browser --> the context is DOM (Document Object Model)
+JavaScript enggine in modzilla firefox(spider monkey), chorme (v8 enggine), microsoft (chakra)
+What it can access by Javascrip iniside browser then ? it's DOM3
+
+using node will be differnt :
+before node :
+document.getElementById()
+document.getElementByClassName()
+document.querySelector()
+
+with NodeJs, no longer inside the browser but operation system
+
+fs.writeFile()
+os.platform()
+http.createServer()
+path.dirname()
+
+the way it work
+
+Asynchronous, Non-Blocking, Single Thread
+
+Syncronous will use so many resource as an example in restaurant one table will serve by waiter if we have 5 tables we will have 5 waiters and if we have many table and customers, the kitchen maybe increasing if it is require and the table will be serve one by one based on the quee even thougt the order of next table maybe easy to serve
+
+Synchronous serve one by one
+Waiter will be multi Thread
+Waiting process will be blocking
+
+While Asynchronous use more effective ways
+will just only need one thread to serve all the table and are able to serve another table that has a lot more simple order which doesn't need to wait for earlier table to finish.
+
+Asynchronous serve one by one but no need to waiting for the first table to be fullfill in order to serve next table
+waiter one for all single-thread
+No need to waiting non-blocing
