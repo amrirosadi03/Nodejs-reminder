@@ -1,0 +1,4 @@
+REPL -> Read-Eval-Print-Loop
+
+1. to debug our script
+2. execute code from terminal
