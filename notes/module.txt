@@ -24,3 +24,4 @@ fungsi require mencari modul dengan urutuan sebagai berikut:
 1. Core modules
 2. file atau direktori (./ atau / atau ../)
 3. Folder 'node_modules'
+
