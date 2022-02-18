@@ -1,0 +1,26 @@
+a file in nodeJS called a module
+
+modules ?
+sekumpulan kode yang dapat digunakan kembail, dengan antarmuka yang terdefinisi
+
+node modules ?
+fungsionalitas yang simpel ataupun kompleks yang tersimpan di dalam sebuah file javascript yang dapat kita gunakan kembali pada aplikasi nodeJS
+
+behavior ?
+setiap modul di dalam node js memiliki konteks-nya masing-masing, tidak bisa saling tercampur dengan modul lain pada lingkup global.
+
+nodeJS Modules :
+1. Core Modules
+   yang sudah dimiliki di dalam librarynya
+2. local modules
+    yang kita bikin sendiri, perlu di:
+    a. export
+    b. require
+3. Third Party Modules
+    yang dibikinin orang lain (NPM), sudah di kumpulkan oleh nodeJS
+
+require ()
+fungsi require mencari modul dengan urutuan sebagai berikut:
+1. Core modules
+2. file atau direktori (./ atau / atau ../)
+3. Folder 'node_modules'

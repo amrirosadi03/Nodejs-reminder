@@ -4,8 +4,14 @@
 
 // const printName = (name) => `Hi, my name is ${name}`;
 // console.log(printName("Umar dan Umair"));
-
-const printName = require("./coba");
+// const fs = require('fs'); // core module
+// const printName = require("./coba"); // import local module
+// const moment = require('moment'); // third pary module / npm module / node_modules
 
 // console.log("Hello ubay!");
-console.log(printName("Amri"));
+
+// const printName = require("./coba");
+
+const coba = require("./coba");
+
+console.log(coba.printName("Amri"), coba.PI, coba.students.printStudent(), new coba.People());
