@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "description": "NodeJS Rewind",
   "main": "app.js",
+  "type": "module",
   "scripts": {
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Amri Rosadi",
   "license": "ISC",
   "dependencies": {
+    "type": "module",
+    "chalk": "^5.0.0",
     "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
