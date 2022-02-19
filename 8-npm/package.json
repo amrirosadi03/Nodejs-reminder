@@ -1,0 +1,15 @@
+{
+  "name": "8-npm",
+  "version": "1.0.0",
+  "description": "NodeJS Rewind",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amri Rosadi",
+  "license": "ISC",
+  "dependencies": {
+    "validator": "^13.7.0"
+  }
+}
