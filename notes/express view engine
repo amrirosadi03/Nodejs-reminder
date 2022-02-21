@@ -1,0 +1,13 @@
+template engine adalah sebuah cara untuk mempermudah pengelolaan file statis halaman web pada aplikasi kita
+
+1. engine tersebut mengganti variable pada template kite dengan nilai sebenarnya, lalu menampilkannya dalam bentuk HTML
+2. mempermudah pembuatan dalam pembuatan halaman HTML
+
+EJS (Embedded Javascript template) / https:ejs.co
+1. simple syntax
+2. simple setup
+3. speedy execution
+4. easy debugging
+5. active development
+6. awalnya dibuat oleh pembuat express
+
