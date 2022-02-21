@@ -1,0 +1,33 @@
+1.expressJS -> fast, unopionated, minimalist web framework for nodeJS
+2. web app framework yang dibuat di atas nodeJS
+3. menyediakan antarmuka yang minimal untuk kakas yang diperlukan dalam membuat sebuah aplikasi web.
+4. membantu pengelolaan aliran data dari serber ke aplikasi
+5. MERN, MEAN, MEVN Stack (MongoDB, expressJS, React | Angular | Vue, nodeJS)
+6. Diciptakan oleh TJ Holowaychuck, pada tanggal 22 Mei 2010
+
+Fitur expressJS
+1. Menangani request dengan berbagai metode HTTP dengan mudah (Routes)
+2. MVC (Model-View-Controller)
+3. Terintegrasi dengan "view" rendering engine untuk mengelola template
+4. Middleware
+
+
+unopinionated
+tidak ada aturan baku untuk membuat sesuatu --> expressJS
+1. Flexibel
+2. menentukan sendiri struktur aplikasi
+3. Bongkar pasang Middleware
+
+pinioneted
+aturan2 dalam membuat sesuatu di informasikan oleh framework tersebut --> ruby on rails
+
+
+Templating engine
+pug, haml.jl, ejs, hbs, eta, react, h4e, swig, marko,  blade, hami-coffe, webflier dll
+
+Database
+Cassadra, couchDB, LevelDB, MySQL, MongoDB, Neo4j, PostgreSQL, Redis, SQLlite dll
+
+respond pada express --> apa yang dikembalikan oleh express ketika kita menargetkan path atau alamat tertentu, apa yang dikembalikan express
+
+req --> apa yang dikirimkan ke express nya
