@@ -1,0 +1,16 @@
+<h1>Web Server NodeJS</h1>
+<h2>Hello <%= name %></h2>
+
+<h4>Inhabitant List</h4>
+
+<% if (inhabitant.length < 1) { %>
+
+<p>Inhabitant data is empty</p>
+
+<% } else { %> <% inhabitant.forEach(inha => { %>
+<ul>
+  <li>Name : <%= inha.name %></li>
+  <li>Email : <%= inha.email %></li>
+</ul>
+
+<% }) %> <% } %>
