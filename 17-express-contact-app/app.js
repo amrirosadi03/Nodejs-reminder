@@ -1,6 +1,8 @@
 const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
 const app = express();
+const { loadContact, findContact } = require("./utils/contacts");
+
 const port = 3000;
 
 app.set("view engine", "ejs"); // use ejs
@@ -38,9 +40,19 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/contact", (req, res) => {
+  const contacts = loadContact();
   res.render("contact", {
     layout: "layouts/main-layout",
     title: "Contact Page",
+    contacts,
+  });
+});
+app.get("/contact/:name", (req, res) => {
+  const contact = findContact(req.params.name);
+  res.render("detail", {
+    layout: "layouts/main-layout",
+    title: "Details Contact Page",
+    contact,
   });
 });
 
@@ -50,5 +62,5 @@ app.use((req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`App listening on port ${port}`);
 });
