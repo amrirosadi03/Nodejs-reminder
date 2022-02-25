@@ -27,4 +27,22 @@ const findContact = (name) => {
   return contact;
 };
 
-module.exports = { loadContact, findContact };
+// menuliskan / menimpa file contacts.json dengan data yang baru
+const saveContacts = (contacts) => {
+  fs.writeFileSync("data/contacts.json", JSON.stringify(contacts));
+};
+
+// menambahkan contact baru
+const addContact = (contact) => {
+  const contacts = loadContact();
+  contacts.push(contact);
+  saveContacts(contacts);
+};
+
+// cek nama yang duplikat
+const checkDuplicate = (name) => {
+  const contacts = loadContact();
+  return contacts.find((contact) => contact.name === name);
+};
+
+module.exports = { loadContact, findContact, addContact, checkDuplicate };
