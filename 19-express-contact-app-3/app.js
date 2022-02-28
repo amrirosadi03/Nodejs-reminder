@@ -1,7 +1,7 @@
 const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
 const app = express();
-const { loadContact, findContact, addContact, checkDuplicate, deleteContact } = require("./utils/contacts");
+const { loadContact, findContact, addContact, checkDuplicate, deleteContact, updateContacts } = require("./utils/contacts");
 const { body, validationResult, check } = require("express-validator");
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
@@ -158,11 +158,10 @@ app.post(
         contact: req.body,
       });
     } else {
-      res.send(req.body);
-      // updateContact(req.body);
-      // //kirimkan flash message
-      // req.flash("msg", "Contact has been updated!");
-      // res.redirect("/contact");
+      updateContacts(req.body);
+      //kirimkan flash message
+      req.flash("msg", "Contact has been updated!");
+      res.redirect("/contact");
     }
   }
 );
