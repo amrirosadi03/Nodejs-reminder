@@ -1,0 +1,41 @@
+Definis MongoDB
+MongoDB --> Humongous Database --> besar karena database bisa mengola data yang banyak dan besar
+
+mongoDb is a document database with the scalability and flexibility that you want with the querying and indexing that you need
+MongoDB adalah sebuah database berbasis dokumen yang memiliki skalabilitas dan fleksibilitas yang kita inginkan dan juga memiliki fitur query dan indexing yang kita butuhkan.
+
+mysql --> berbasis relational, normalisasi
+database berbasi dokumen --> merupakan salah satu tipe dari NoSQL Database
+NoSQL Database --> 
+1. Not only SQL (tidak ahnya SQL)
+2. Schemaless / flexible schema
+3. Denormalization --> 
+4. Non-relational database
+5. Unstructured, semi-structured, structured data
+
+Tipe NoSQL Database
+1. Key-value Store
+    redis
+2. Document Based
+   MongoDB, CouchDB
+3. Column-oriented Database
+    HBase, Cassandra
+4. Graph Database
+    Neo4j
+
+Terminologi pada SQL vs NoSQL
+nama tempat penyimpanan, 1. database  1. database
+                         2. tabel(tabular) 2. sama dengan JSON(javascrip objec notation)
+                         3. tabel  3. Collection
+ satu data di sebut dengan  4. record/row/baris  4. dokumen (object)
+ satu jurusan,email, nama 5. Column/field  5. field
+ 
+
+
+ Konsep embedded document (denormalization)
+ dokumen yang ditambahkan lagi pada satu nama dokumen yang sama tapi di dokumen yang lain memiliki tambahan data
+
+ kenapa MongoDB
+ 1. JSON (BSON), binary JSON
+ 2. Javascript
+ 3. MERN, MEVN, MEAN
