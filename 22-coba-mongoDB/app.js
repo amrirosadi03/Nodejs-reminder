@@ -1,4 +1,4 @@
-const { MongoClient } = require("mongodb");
+const { MongoClient, ObjectID } = require("mongodb");
 
 const uri = "mongodb://127.0.0.1:27017";
 const dbName = "amri";
@@ -62,12 +62,68 @@ client.connect((error, client) => {
   //   );
 
   //menampilkan data berdasarkan kriteria yang ada di collection inhabitant
-  console.log(
-    db
-      .collection("inhabitant")
-      .find({ name: "Andriani" })
-      .toArray((error, result) => {
-        console.log(result);
-      })
-  );
+  // console.log(
+  //   db
+  //     .collection("inhabitant")
+  //     .find({ _id: ObjectID("6220d0393a8048b9dea099f9") })
+  //     .toArray((error, result) => {
+  //       console.log(result);
+  //     })
+  // );
+
+  // mengubah data berdasarkan id
+  // const updatePromise = db.collection("inhabitant").updateOne(
+  //   {
+  //     _id: ObjectID("6220d0393a8048b9dea099f9"),
+  //   },
+  //   {
+  //     $set: {
+  //       email: "ubaidillah@yahoo.com",
+  //     },
+  //   }
+  // );
+
+  // updatePromise
+  //   .then((result) => {
+  //     console.log(result);
+  //   })
+  //   .catch((error) => {
+  //     console.log(error);
+  //   });
+
+  //mengubah data lebih dari satu berdasarkan kriteria
+  // db.collection("inhabitant").updateMany(
+  //   {
+  //     name: "Andriani",
+  //   },
+  //   {
+  //     $set: {
+  //       name: "Andriani Aprianti S.Pd",
+  //     },
+  //   }
+  // );
+
+  // menghapus satu data
+  // db.collection("inhabitant")
+  //   .deleteOne({
+  //     _id: ObjectID("622373f14973d6a31314f724"),
+  //   })
+  //   .then((result) => {
+  //     console.log(result);
+  //   })
+  //   .catch((error) => {
+  //     console.log(error);
+  //   });
+
+  // mengapus lebih dari satu data
+  db.collection("inhabitant")
+    .deleteMany({
+      name: "Andriani Aprianti S.pd",
+    })
+    .then((result) => {
+      console.log(result);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 });
