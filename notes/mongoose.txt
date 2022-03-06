@@ -1,0 +1,3 @@
+Mongoose adalah object modeling/ODM, padanannya ORM untuk SQL
+
+Mongoose menyediakan solusi berbasis skema
